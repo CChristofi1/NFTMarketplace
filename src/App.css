@@ -1,6 +1,11 @@
 .App {
   text-align: center;
 }
+.navbar a {
+  padding:14px 20px;
+  display:block;
+  float:left;
+}
 
 .App-logo {
   height: 40vmin;
