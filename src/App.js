@@ -3,7 +3,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import Home from './pages/Home';
 import Marketplace from './pages/Marketplace';
@@ -38,6 +37,5 @@ function App() {
   );
 }
 
-ReactDOM.render(App,document.getElementById("root"));
 
 export default App;
