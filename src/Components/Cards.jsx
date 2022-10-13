@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const NftCard = ({ image, id, title, address, description, attributes }) => {
   return (
@@ -14,13 +14,13 @@ const NftCard = ({ image, id, title, address, description, attributes }) => {
             <a
               target="_blank"
               className="text-blue-700"
-              href={`https://etherscan.io/token/${address}`}>{`${address.slice(
-              0,
-              4
-            )}...${address.slice(address.length - 4)}`}</a>
+              href={`https://etherscan.io/token/${address}`}
+            >{`${address.slice(0, 4)}...${address.slice(
+              address.length - 4
+            )}`}</a>
           </div>
         </div>
-        <p>{description ? description.slice(0, 1000) : 'No Description'}</p>
+        <p>{description ? description.slice(0, 1000) : "No Description"}</p>
       </div>
       <div className="flex flex-wrap justify-center items-center p-3 ">
         {attributes?.length > 0 &&

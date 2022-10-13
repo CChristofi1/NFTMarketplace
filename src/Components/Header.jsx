@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -7,11 +7,19 @@ const Header = () => {
       <div className="container" bis_skin_checked="1">
         <div
           className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-          bis_skin_checked="1">
+          bis_skin_checked="1"
+        >
           <Link
             to="/Home"
-            className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-            <svg className="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+            className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+          >
+            <svg
+              className="bi me-2"
+              width="40"
+              height="32"
+              role="img"
+              aria-label="Bootstrap"
+            >
               <use href="#bootstrap"></use>
             </svg>
           </Link>
@@ -34,7 +42,10 @@ const Header = () => {
             </li>
           </ul>
 
-          <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <form
+            className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"
+            role="search"
+          >
             <input
               type="search"
               className="form-control form-control-dark text-bg-dark"
