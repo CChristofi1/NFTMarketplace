@@ -2,7 +2,7 @@ import React from 'react';
 
 const NftCard = ({ image, id, title, address, description, attributes }) => {
     return (
-        <div className="mx-auto w-1/4 mr-3 mb-4 bg-slate-100 rounded-md" >
+        <div className="w-1/4 mr-3 mb-4 bg-slate-100 rounded-md shadow-md shadow-indigo-500/40" >
             <img className='w-full rounded-t-md' key={id} src={image}></img>
             <div className="p-3">
                 <div className="flex mb-3">
@@ -14,7 +14,7 @@ const NftCard = ({ image, id, title, address, description, attributes }) => {
                         <a target="_blank" className="text-blue-700" href={`https://etherscan.io/token/${address}`}>{`${address.slice(0, 4)}...${address.slice(address.length - 4)}`}</a>
                     </div>
                 </div>
-                <p>{description? description.slice(0, 200) : "No Description"}</p>
+                <p>{description? description.slice(0, 1000) : "No Description"}</p>
             </div>
             <div className="flex flex-wrap justify-center items-center p-3 ">
                 {attributes?.length > 0 && attributes.map(attribute => {

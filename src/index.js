@@ -6,4 +6,4 @@ import App from './App';
 
 const cont =document.getElementById('root'); 
 const root = createRoot(cont);
-root.render(<App tab='home'/>);
+root.render(<App tab='/'/>);
